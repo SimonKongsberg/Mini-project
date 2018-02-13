@@ -1,0 +1,103 @@
+@import "variables";
+
+.news {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 80px 100px 0px 100px !important;
+
+  &-item {
+    background-color: black;
+    width: 30%;
+    height: 320px;
+    align-content: center;
+
+    &__text {
+      font-size: 30px;
+      border: white 1px solid;
+      margin: auto;
+      font-weight: 700;
+      color: white;
+      margin-top: 100px;
+
+      & p {
+        font-size: 40px;
+        font-weight: 400;
+      }
+    }
+
+    &--men {
+      align-content: flex-end;
+      padding: 20px;
+    }
+
+    &--women {
+      align-content: flex-start;
+      padding: 20px;
+    }
+  }
+
+  &-letter {
+    align-items: center;
+    background-color: $highlight;
+    width: 350px;
+    border: $lightGrey solid 1px;
+    box-shadow: 2px;
+    padding: 10px;
+
+    &__icon {
+      background-color: $primary-color;
+      width: 60px;
+      height: 60px;
+      color: white;
+      border-radius: 50%;
+      overflow: hidden;
+      text-align: center;
+      margin: auto;
+
+      & span {
+        display: inline-block;
+        margin: 8px 0px 0 0;
+        padding: 5px 10px;
+        font-size: 32px;
+      }
+    }
+
+    &__title {
+      font-size: 29px;
+      color: $darkGrey;
+    }
+
+    &__text {
+      font-size: 18px;
+      color: $lightGrey;
+    }
+  }
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $darkGrey;
+    font-family: open sans, sans-serif;
+    font-size: 18px;
+  }
+
+  &-form {
+
+    &__email {
+      text-align: center;
+      width: 100%;
+      border-width: 0px;
+      border-bottom: 2px $darkGrey solid;
+      margin: 20px 0px;
+      height: 26px;
+    }
+
+    &__button {
+      color: $darkGrey;
+      width: 100%;
+      border: 2px $darkGrey solid;
+      background-color: white;
+      font-size: 18px;
+      padding: 10px;
+    }
+  }
+}

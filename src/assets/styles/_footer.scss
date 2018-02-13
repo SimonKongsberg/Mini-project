@@ -1,0 +1,26 @@
+@import "variables";
+
+.footer {
+  background-color: $darkGrey;
+  display: grid;
+  grid-template-columns: 20%;
+
+  &__section {
+
+    &--credit{
+
+    }
+
+    &--logo{
+
+    }
+  }
+
+  &__title {
+    color: white;
+  }
+
+  &__text {
+    color: $lightGrey;
+  }
+}

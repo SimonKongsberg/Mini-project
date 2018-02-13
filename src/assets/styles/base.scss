@@ -1,6 +1,103 @@
-$primary-color: tomato;
+@import "header";
+@import "button";
+@import "news";
+@import "content";
+@import "collection";
+@import "nav";
+@import "brand";
+@import "social";
+@import "showcase";
+@import "footer";
 
-body
-{
-    background-color: $primary-color;
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Open Sans', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+
+h1, h2, h3, h4{
+  font-weight: 700;
+}
+
+p{
+  font-weight:400;
+}
+
+.btn {
+  display: inline-block;
+  padding: .938em 1.875em;
+  border-radius: .625em;
+  box-shadow: 0 .375em .313em -0.313em rgba(0,0,0,.8), inset 0 .063em rgba(255,255,255,.4), inset 0 -0.188em rgba(0,0,0,.15);
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 .063em #000;
+  cursor: pointer;
+  font: bold 1.8rem sans-serif;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+}
+
+/* Pc */
+@media screen and (min-width: 1200px) {
+}
+
+/* HD */
+@media screen and (min-width: 1920px) {
 }

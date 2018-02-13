@@ -1,0 +1,29 @@
+@import "variables";
+
+header{
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 110px;
+    background-color: $darkGrey;
+    align-items: center;
+
+    &__logo {
+        align-content: flex-start;
+    }
+}
+
+
+
+#icon{
+    display: flex;
+    justify-content:space-between;
+    width: auto;
+    color: white;
+    align-items:baseline;
+    flex-wrap: nowrap
+}
+

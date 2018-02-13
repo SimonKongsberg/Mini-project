@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <header-top></header-top>
     <router-view/>
-    <contact-us></contact-us>
+    <footer-bot></footer-bot>
   </div>
 </template>
 
 <script>
-  import ContactUs from '@/components/ContactUs'
+  
+  import HeaderTop from '@/components/Header'
+  import FooterBot from '@/components/Footer'
+
+
 export default {
     name: 'App',
     components: {
-        'contact-us':ContactUs
+      'header-top': HeaderTop,
+      'footer-bot': FooterBot
+
     }
 }
 </script>

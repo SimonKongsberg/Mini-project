@@ -3,8 +3,9 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import ContactUs from '@/components/ContactUs'
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import FooterBot from '@/components/Footer'
 import Product from '@/components/Product'
+import Frontpage from '@/components/Frontpage'
 
 
 Vue.use(Router)
@@ -13,8 +14,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Frontpage',
+      component: Frontpage
     },
     {
       path: '/contactus',

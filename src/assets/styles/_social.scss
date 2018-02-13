@@ -1,0 +1,31 @@
+﻿$hightlight:  #f8f8f8;
+
+#news {
+    display: flex;
+    justify-content:space-around;
+    &-item {
+        background-color: black;
+
+        &__text {
+        }
+    }
+
+    &-letter {
+        &__icon {
+        }
+
+        &__title {
+        }
+
+        &__text {
+        }
+    }
+
+    &-form {
+        &__email {
+        }
+
+        &__button {
+        }
+    }
+}

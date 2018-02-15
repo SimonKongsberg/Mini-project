@@ -3,22 +3,36 @@
 header{
 }
 
-#nav {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    height: 110px;
-    background-color: $darkGrey;
-    align-items: center;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  height: 110px;
+  width: 100%;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 10000;
+  background-color: $darkGrey;
 
-    &__logo {
-        align-content: flex-start;
-    }
+  &__logo {
+    align-content: flex-start;
+  }
+
+  &--trans {
+    transition: all 0.5s;
+    background-color: none;
+  }
+
+  &--black {
+    transition: all 0.5s;
+    background-color: $darkGrey;
+  }
 }
 
 
 
-#icon{
+.icon{
     display: flex;
     justify-content:space-between;
     width: auto;
@@ -27,3 +41,28 @@ header{
     flex-wrap: nowrap
 }
 
+/*Big Phones*/
+@media screen and (min-width: 568px) {
+
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .nav {
+    background-color: transparent;
+    position: fixed;
+  }
+}
+/*Smalle PC*/
+@media screen and (min-width: 1000px) {
+  
+}
+
+/* Pc */
+@media screen and (min-width: 1200px) {
+  
+}
+
+/* HD */
+@media screen and (min-width: 1920px) {
+}

@@ -1,14 +1,24 @@
 <template>
-  <div class="product-page">
+  <div class="collection">
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>Collection</h1>
     <ul>
       <li v-for="product in products" :key="product.id">
-        <router-link :to="/product/ + product.id">{{ product.title}}</router-link>
+        <router-link :to="/product/ + product.id" >{{ product.title }}</router-link>
       </li>
     </ul>
+    <br />
+    <br />
+    <br />
+    <br />
   </div>
 </template>
 <script>
   import axios from 'axios';
+
 
   export default {
     name: 'product-list',

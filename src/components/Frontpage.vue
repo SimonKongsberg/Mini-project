@@ -1,11 +1,28 @@
-<template>
+﻿<template>
   <div id="main-content">
     <!--Slider-->
-    <div id="slider">
+    <md-card class="md__card">
+      <md-card-actions>
+        <md-button class="md-icon-button"
+                   target="_blank"
+                   href="https://github.com/surmon-china/vue-awesome-swiper/blob/master/examples/05-pagination-progress.vue">
+        </md-button>
+      </md-card-actions>
+      <md-card-media>
+        <!-- swiper -->
+        <swiper :options="swiperOption">
+          <swiper-slide><div class="banner" :style="{'background-image': 'url(' + require('../assets/big_summer.gif') + ')'}"></div></swiper-slide>
+          <swiper-slide>Slide 2</swiper-slide>
+          <swiper-slide>Slide 3</swiper-slide>
+          <div class="swiper-pagination cWhite" slot="pagination"></div>
+          <div class="swiper-button-prev cWhite" slot="button-prev"></div>
+          <div class="swiper-button-next cWhite" slot="button-next"></div>
+        </swiper>
+      </md-card-media>
+    </md-card>
 
-    </div>
     <div class="news">
-      <div class="news-item news-item--men">
+      <div class="news-item news-item--men" :style="{'background-image': 'url(' + require('../assets/men_lookbook.png') + ')'}">
         <div class="news-item__text">MEN'S <br /><p>lookbook</p></div>
       </div>
       <div class="news-letter">
@@ -18,33 +35,39 @@
         </form>
 
       </div>
-      <div class="news-item news-item--women">
+      <div class="news-item news-item--women" :style="{'background-image': 'url(' + require('../assets/women_lookbook.png') + ')'}">
         <div class="news-item__text">WOMEN'S <br /><p>lookbook</p></div>
       </div>
     </div>
 
-    <div id="brand">
-      <h3 class="brand__title">----- TOP BRANDS -----</h3>
+    <div class="brand">
+        <h3 class="brand__title">----- TOP BRANDS -----</h3><br />
       <div class="brand__icons">
-        <div class="brand-icon"></div>
-        <div class="brand-icon"></div>
-        <div class="brand-icon"></div>
-        <div class="brand-icon"></div>
-        <div class="brand-icon"></div>
+        <img src="../assets/logos.jpg" alt="logo" class="brand-icon"/>
+
       </div>
     </div>
 
-    <div id="content">
+    <div class="content">
       <div class="content__box"></div>
       <div class="content__box"></div>
       <div class="content__box"></div>
     </div>
 
-
-    <div class="showcase-nav">
-      <div class="showcase-nav__button"></div>
-      <div class="showcase-nav__button"></div>
-      <div class="showcase-nav__button"></div>
+    <div>
+      <tabs class="showcase-nav">
+        <tab name="NEW ARRIVALS" class="showcase-nav__button">
+        <ul class="showcase">
+          <li class="showcase-item" v-for="product in products" :key="product.id">
+            <img :src="'/static/products/' + product.img" :alt="product.title"/>
+            <router-link :to="/product/ + product.id">{{ product.title }}</router-link>
+            <router-link :to="/product/ + product.id">{{ product.title }}</router-link>
+          </li>
+        </ul>
+        </tab>
+        <tab name="TOP SELLERS" class="showcase-nav__button"></tab>
+        <tab name="FEATURED" class="showcase-nav__button"></tab>
+      </tabs>
     </div>
 
     <div class="showcase">
@@ -61,24 +84,66 @@
       </div>
     </div>
 
-    <div class="banner"></div>
-
+    <img src="../assets/all_summer.jpg" class="banner2" alt="banner2"/>
     <div class="about">
-      <div class="about__img"></div>
-      <div class="about__name">Jane Smith</div>
-      <div class="about__text">Far away</div>
+      <img src="../assets/jane.jpg" class="about__img"/>
+      <div class="about__name"><h3>Jane Smith</h3></div>
+      <div class="about__text"><p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p></div>
     </div>
 
     <div class="social">
       <div class="social__title">----- GET US ON -----</div>
       <div class="social__nav">
-        <span class="social__nav-icon"></span>
-        <span class="social__nav-icon"></span>
-        <span class="social__nav-icon"></span>
-        <span class="social__nav-icon"></span>
-        <span class="social__nav-icon"></span>
-        <span class="social__nav-icon"></span>
+        <div class="circle-social"><span class="fa fa-twitter social__nav-icon"></span></div>
+        <div class="circle-social"><span class="fa fa-pinterest social__nav-icon"></span></div>
+        <div class="circle-social"><span class="fa fa-facebook social__nav-icon"></span></div>
+        <div class="circle-social"><span class="fa fa-google-plus social__nav-icon"></span></div>
+        <div class="circle-social"><span class="fa fa-youtube social__nav-icon"></span></div>
+        <div class="circle-social"><span class="fa fa-tumblr social__nav-icon"></span></div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+
+  import axios from 'axios';
+
+  export default {
+    name: 'swiper',
+    data() {
+      return {
+        swiperOption: {
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar'
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          }
+        },
+      }
+    },
+    name: 'product-list',
+    data: function () {
+      return {
+        products: []
+      }
+    },
+    created: function () {
+      this.getProducts();
+    },
+    methods: {
+      getProducts: function () {
+        axios
+          .get("/static/products.json")
+          .then(response => { this.products = response.data })
+          .catch(error => {
+            console.log(error);
+          })
+      }
+    }
+  }
+
+</script>

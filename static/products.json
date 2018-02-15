@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Hoodie",
+    "price": 499,
+    "description": "Lorem ipsum asdkal sdfijk",
+    "img": "1.png",
+    "variants": [ "black", "white", "yellow" ],
+    "sizes": [ 10, 20, 30 ]
+  },
+  {
+    "id": 2,
+    "title": "Hoodie",
+    "price": 499,
+    "description": "Lorem ipsum asdkal sdfijk",
+    "img": "product1.png",
+    "variants": [ "black", "white", "yellow" ],
+    "sizes": [ 10, 20, 30 ]
+  }
+]

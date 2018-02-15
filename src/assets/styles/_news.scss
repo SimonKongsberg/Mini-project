@@ -252,10 +252,24 @@
   height: 55px;
 }
 
-.showcase{
+/* Showcase */
 
-  &-item{
+.showcase {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 20px;
+  &-item {
+    margin: 10px 12px;
 
+    &__img {
+    }
+
+    &__title {
+    }
+
+    &__button {
+    }
   }
 }
 

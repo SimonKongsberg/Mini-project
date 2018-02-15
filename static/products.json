@@ -4,7 +4,7 @@
     "title": "Hoodie",
     "price": 499,
     "description": "Lorem ipsum asdkal sdfijk",
-    "img": "1.png",
+    "img": "product1.png",
     "variants": [ "black", "white", "yellow" ],
     "sizes": [ 10, 20, 30 ]
   },
@@ -13,7 +13,133 @@
     "title": "Hoodie",
     "price": 499,
     "description": "Lorem ipsum asdkal sdfijk",
-    "img": "product1.png",
+    "img": "16.png",
+    "variants": [ "black", "white", "yellow" ],
+    "sizes": [ 10, 20, 30 ]
+  },
+  {
+    "id": 3,
+    "title": "Hoodie",
+    "price": 499,
+    "description": "Lorem ipsum asdkal sdfijk",
+    "img": "product3.png",
+    "variants": [ "black", "white", "yellow" ],
+    "sizes": [ 10, 20, 30 ]
+  },
+  {
+    "id": 4,
+    "title": "Hoodie",
+    "price": 499,
+    "description": "Lorem ipsum asdkal sdfijk",
+    "img": "product4.png",
+    "variants": [ "black", "white", "yellow" ],
+    "sizes": [ 10, 20, 30 ]
+  },
+  {
+    "id": 5,
+    "title": "Hoodie",
+    "price": 499,
+    "description": "Lorem ipsum asdkal sdfijk",
+    "img": "product5.png",
+    "variants": [ "black", "white", "yellow" ],
+    "sizes": [ 10, 20, 30 ]
+  },
+  {
+    "id": 6,
+    "title": "Hoodie",
+    "price": 499,
+    "description": "Lorem ipsum asdkal sdfijk",
+    "img": "product6.png",
+    "variants": [ "black", "white", "yellow" ],
+    "sizes": [ 10, 20, 30 ]
+  },
+  {
+    "id": 7,
+    "title": "Hoodie",
+    "price": 499,
+    "description": "Lorem ipsum asdkal sdfijk",
+    "img": "7.png",
+    "variants": [ "black", "white", "yellow" ],
+    "sizes": [ 10, 20, 30 ]
+  },
+  {
+    "id": 8,
+    "title": "Hoodie",
+    "price": 499,
+    "description": "Lorem ipsum asdkal sdfijk",
+    "img": "product2.png",
+    "variants": [ "black", "white", "yellow" ],
+    "sizes": [ 10, 20, 30 ]
+  },
+  {
+    "id": 9,
+    "title": "Hoodie",
+    "price": 499,
+    "description": "Lorem ipsum asdkal sdfijk",
+    "img": "9.png",
+    "variants": [ "black", "white", "yellow" ],
+    "sizes": [ 10, 20, 30 ]
+  },
+  {
+    "id": 10,
+    "title": "Hoodie",
+    "price": 499,
+    "description": "Lorem ipsum asdkal sdfijk",
+    "img": "10.png",
+    "variants": [ "black", "white", "yellow" ],
+    "sizes": [ 10, 20, 30 ]
+  },
+  {
+    "id": 11,
+    "title": "Hoodie",
+    "price": 499,
+    "description": "Lorem ipsum asdkal sdfijk",
+    "img": "11.png",
+    "variants": [ "black", "white", "yellow" ],
+    "sizes": [ 10, 20, 30 ]
+  },
+  {
+    "id": 12,
+    "title": "Hoodie",
+    "price": 499,
+    "description": "Lorem ipsum asdkal sdfijk",
+    "img": "12.png",
+    "variants": [ "black", "white", "yellow" ],
+    "sizes": [ 10, 20, 30 ]
+  },
+  {
+    "id": 13,
+    "title": "Hoodie",
+    "price": 499,
+    "description": "Lorem ipsum asdkal sdfijk",
+    "img": "13.png",
+    "variants": [ "black", "white", "yellow" ],
+    "sizes": [ 10, 20, 30 ]
+  },
+  {
+    "id": 14,
+    "title": "Hoodie",
+    "price": 499,
+    "description": "Lorem ipsum asdkal sdfijk",
+    "img": "14.png",
+    "variants": [ "black", "white", "yellow" ],
+    "sizes": [ 10, 20, 30 ]
+  },
+  {
+    "id": 15,
+    "title": "Hoodie",
+    "price": 499,
+    "description": "Lorem ipsum asdkal sdfijk",
+    "img": "15.png",
+    "variants": [ "black", "white", "yellow" ],
+    "sizes": [ 10, 20, 30 ]
+  },
+  {
+    "id": 16,
+    "title": "Hoodie",
+    "price": 499,
+    "description": "Lorem ipsum asdkal sdfijk",
+    "img": "product2.png",
     "variants": [ "black", "white", "yellow" ],
     "sizes": [ 10, 20, 30 ]
   }

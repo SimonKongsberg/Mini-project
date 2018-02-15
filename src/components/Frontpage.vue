@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <div id="main-content">
     <!--Slider-->
     <md-card class="md__card">
@@ -58,10 +58,15 @@
       <tabs class="showcase-nav">
         <tab name="NEW ARRIVALS" class="showcase-nav__button">
         <ul class="showcase">
-          <li class="showcase-item" v-for="product in products" :key="product.id">
-            <img :src="'/static/products/' + product.img" :alt="product.title"/>
-            <router-link :to="/product/ + product.id">{{ product.title }}</router-link>
-            <router-link :to="/product/ + product.id">{{ product.title }}</router-link>
+          <li class="showcase-item" v-for="product in products.slice(0,5)" :key="product.id">
+            <router-link :to="/product/ + product.id">
+              <img class="showcase-item__img" :src="'/static/products/' + product.img" :alt="product.title" />
+              <h4 class="showcase-item__title">{{ product.title }}</h4>
+              <div class="showcase-item__bottom">
+                <p>$ {{product.price}}</p>
+                <button><span class="fa fa-shopping-bag"></span>Add to bag</button>
+              </div>
+            </router-link>
           </li>
         </ul>
         </tab>
@@ -70,19 +75,6 @@
       </tabs>
     </div>
 
-    <div class="showcase">
-      <div class="showcase-item">
-        <div class="showcase-item__img">
-          <div class="showcase-popup">
-            <span class="showcase-popup__view">Quick view</span>
-            <span class="showcase-popup__save">Save</span>
-          </div>
-        </div>
-        <div class="showcase-item__name"></div>
-        <div class="showcase-item__price"></div>
-        <div class="showcase-item__add"></div>
-      </div>
-    </div>
 
     <img src="../assets/all_summer.jpg" class="banner2" alt="banner2"/>
     <div class="about">
@@ -128,7 +120,8 @@
     name: 'product-list',
     data: function () {
       return {
-        products: []
+        products: [],
+        limitationList: 5
       }
     },
     created: function () {
@@ -142,6 +135,7 @@
           .catch(error => {
             console.log(error);
           })
+          
       }
     }
   }

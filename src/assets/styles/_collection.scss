@@ -1,3 +1,41 @@
-﻿body
+@import "variables";
+
+body
 {
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+  font-family: open sans, sans-serif;
+  font-size: 18px;
+}
+
+.showcase a{
+  text-decoration: none;
+  color: #333333;
+}
+
+.sub {
+  display: flex;
+  justify-content: center;
+  background-color: $primary-color;
+  padding: 40px 2px 40px 2px;
+
+  &__input {
+    text-align: center;
+    color: white;
+    border: white 2px solid;
+    padding: 10px 50px 10px 50px;
+    margin: 10px;
+    background-color: transparent;
+  }
+
+  &__button {
+    color: $darkGrey;
+    font-family: 'open sans', sans-serif;
+    background-color: white;
+    padding: 8px 30px 10px 30px;
+    border: transparent;
+    margin: 10px;
+  }
 }

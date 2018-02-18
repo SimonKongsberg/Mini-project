@@ -3,12 +3,13 @@
 @import "news";
 @import "content";
 @import "collection";
-@import "nav";
 @import "brand";
 @import "social";
 @import "showcase";
 @import "product";
 @import "footer";
+@import "variables";
+@import "contact";
 
 * {
   box-sizing: border-box;
@@ -78,6 +79,22 @@ p{
   font-weight:400;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
+}
+
+button {
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
+}
 
 .btn {
   display: inline-block;

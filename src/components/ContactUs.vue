@@ -1,21 +1,68 @@
 <template>
   <div>
-    <h1></h1>
-    <p>Email us at {{email}}</p>
+    <div class="header--back"></div>
+    <form class="contact" @submit.prevent="validateBeforeSubmit">
+      <div class="column is-12">
+        <label class="label">Email</label>
+        <p class="control has-icon has-icon-right">
+          <input name="email" v-model="email" v-validate="'required|email'" :class="{'input': true, 'is-danger': errors.has('email') }" type="text" placeholder="Email">
+          <i v-show="errors.has('email')" class="fa fa-warning"></i>
+          <span v-show="errors.has('email')" class="help is-danger">{{ errors.first('email') }}</span>
+        </p>
+      </div>
+      <div class="column is-12">
+        <label class="label">Name</label>
+        <p class="control has-icon has-icon-right">
+          <input name="name" v-model="name" v-validate="'required|alpha'" :class="{'input': true, 'is-danger': errors.has('name') }" type="text" placeholder="Name">
+          <i v-show="errors.has('name')" class="fa fa-warning"></i>
+          <span v-show="errors.has('name')" class="help is-danger">{{ errors.first('name') }}</span>
+        </p>
+      </div>
+      <div class="column is-12">
+        <label class="label">Phone</label>
+        <p class="control has-icon has-icon-right">
+          <input name="phone" v-model="phone" v-validate="'required|numeric'" :class="{'input': true, 'is-danger': errors.has('phone') }" type="text" placeholder="Phone">
+          <i v-show="errors.has('phone')" class="fa fa-warning"></i>
+          <span v-show="errors.has('phone')" class="help is-danger">{{ errors.first('phone') }}</span>
+        </p>
+      </div>
+      <div class="column is-12">
+        <label class="label">Message</label>
+        <p class="control has-icon has-icon-right">
+          <input id="message" name="message" type="text" placeholder="Message">
+        </p>
+      </div>
+
+      <div class="column is-12">
+        <p class="control">
+          <button class="button is-primary" type="submit">Submit</button>
+        </p>
+      </div>
+    </form>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'contact-us',
+    name: 'my-form',
     data: function () {
       return {
-        email: 'hello@eal.dk'
+        form: {
+          firstname: '',
+          email: '',
+          message: ''
+        },
+        isSubmitted: false
+      }
+    },
+    methods: {
+      submitForm: function () {
+        this.isSubmitted = true;
+        this.form = null;
       }
     }
-  };
+  }
 </script>
-
 <style lang="scss">
   @import '../assets/styles/base';
 </style>

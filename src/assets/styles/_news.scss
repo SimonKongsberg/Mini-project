@@ -18,15 +18,19 @@
 
 .news {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   text-align: center;
-  margin: 80px 100px 0px 100px !important;
+  margin: 40px 10px 0px 10px;
 
   &-item {
     background-color: black;
-    width: 30%;
-    height: 320px;
+    width: 100%;
+    height: 250px;
     align-content: center;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    margin-bottom: 5px;
 
     &__text {
       font-size: 30px;
@@ -45,7 +49,7 @@
     &--men {
       align-content: flex-end;
       padding: 20px;
-      
+      background-size: cover;
     }
 
     &--women {
@@ -64,6 +68,8 @@
     border: $lightGrey solid 1px;
     box-shadow: 2px;
     padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 
     &__icon {
       background-color: $primary-color;
@@ -110,15 +116,16 @@
       border-bottom: 2px $darkGrey solid;
       margin: 20px 0px;
       height: 26px;
+      background-color: transparent;
     }
 
     &__button {
       color: $darkGrey;
       width: 100%;
       border: 2px $darkGrey solid;
-      background-color: white;
+      background-color: $highlight;
       font-size: 18px;
-      padding: 10px;
+      padding: 15px;
 
       & :hover {
         background-color: $highlight;
@@ -142,48 +149,39 @@
 
   &__icons {
     display: flex;
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
     justify-content: center;
   }
 
   &-icon {
+    margin: 0px 10px;
   }
 }
 
-.content{
+/*Content*/
 
-  &__box{
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px 10px 0px 10px;
 
-  }
-}
+  &__box {
 
-//second banner
+    &--right {
+    }
 
-.banner2{
-  display: block;
-  width: 100%;
-}
+    &--left {
+      margin-right: 5px;
 
-.about {
-  background-color: $primary-color;
-  text-align: center;
-  color: white;
-  padding: 60px 200px;
+      & img {
+        width: 100%;
+      }
+    }
 
-  &__img {
-  }
-
-  &__name {
-    font-size: 20px;
-    font-weight: 400;
-  }
-
-  &__text {
-    font-size: 16px;
-    font-weight: lighter;
-    font-style: italic;
-    line-height: 25px;
-    margin-top: 15px;
+    &--bottom {
+      margin-top: 5px;
+    }
   }
 }
 
@@ -205,7 +203,7 @@
 
   &-tab {
     margin: 5px;
-    border: white 2px solid;
+    border: transparent 2px solid;
     padding: 5px;
     &.is-active {
       border-bottom: black 2px solid;
@@ -219,6 +217,94 @@
   }
 }
 
+
+/* Showcase */                                                                                /* Showcase */
+
+.showcase {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 20px;
+
+  &-item {
+    margin: 10px 12px;
+
+    &__img {
+      width: 100%;
+    }
+
+    &__title {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      margin-top: 15px;
+    }
+
+    &__price {
+      font-size: 20px;
+      font-weight: 700 !important;
+    }
+
+    &__button {
+      font-family: open-sans, sans-serif;
+      color: $darkGrey;
+      background-color: white;
+      border: solid 1px $darkGrey !important;
+      padding: 3px 10px 3px 10px;
+      font-size: 17px;
+    }
+  }
+}
+
+.sale-float{
+  font-family: 'open sans', sans-serif;
+  color: white;
+  font-weight: 300;
+  font-size: 25px;
+  margin: 5px 11px;
+  position: absolute;
+}
+
+//second banner
+
+.banner2 {
+  display: none;
+}
+
+
+ /*About*/                                                                                  /*About*/
+
+.about {
+  background-color: $primary-color;
+  text-align: center;
+  color: white;
+  padding: 5px 5px;
+
+  &__img {
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: lighter;
+    font-style: italic;
+    line-height: 25px;
+    margin-top: 15px;
+  }
+}
+
+
+
+/*Social*/
 .social {
   text-align: center;
   margin-top: 40px;
@@ -233,9 +319,10 @@
 
   &__nav {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     margin-top: 35px;
     padding: 0px 18%;
+
     &-icon {
       margin: auto 0px;
       font-size: 25px;
@@ -244,7 +331,7 @@
   }
 }
 
-.circle-social{
+.circle-social {
   border: 1px $lightGrey solid;
   border-radius: 50%;
   padding: 15px;
@@ -252,30 +339,13 @@
   height: 55px;
 }
 
-/* Showcase */
-
-.showcase {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 10px 20px;
-  &-item {
-    margin: 10px 12px;
-
-    &__img {
-    }
-
-    &__title {
-    }
-
-    &__button {
-    }
-  }
-}
-
   /*Big Phones*/
 @media screen and (min-width: 568px) {
-
+  .news {
+    &-item {
+      width: 65%;
+    }
+  }
 }
 
   /* Tablet */
@@ -287,22 +357,55 @@
       display: block;
       height: 430px;
     }
-  }
-  /*Smalle PC*/
-@media screen and (min-width: 1000px) {
-  .banner {
-    height: 530px;
-  }
-  }
 
-  /* Pc */
-  @media screen and (min-width: 1200px) {
-    .banner {
-      height: 550px;
-      background-size: cover;
-    }
-  }
 
-  /* HD */
-  @media screen and (min-width: 1920px) {
-  }
+        .banner2 {
+          display: block;
+          width: 100%;
+        }
+      }
+      /*Small PC*/
+      @media screen and (min-width: 1000px) {
+        .banner {
+          height: 530px;
+        }
+
+        .news {
+          justify-content: space-between;
+          margin: 20px 50px 0px 50px;
+
+          &-item {
+            background-color: black;
+            width: 30%;
+            height: 320px;
+            align-content: center;
+          }
+        }
+        /*About*/
+        .about {
+          padding: 60px 200px;
+
+          &__img {
+          }
+
+          &__name {
+          }
+
+          &__text {
+          }
+        }
+      }
+      /* Pc */
+      @media screen and (min-width: 1200px) {
+        .banner {
+          height: 550px;
+          background-size: cover;
+        }
+
+        .news {
+          margin: 80px 100px 0px 100px;
+        }
+      }
+      /* HD */
+      @media screen and (min-width: 1920px) {
+      }

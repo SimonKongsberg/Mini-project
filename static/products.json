@@ -1,16 +1,17 @@
 [
   {
     "id": 1,
-    "title": "Hoodie",
+    "title": "Clothing",
     "price": 499,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "product1.png",
     "variants": [ "black", "white", "yellow" ],
-    "sizes": [ 10, 20, 30 ]
+    "sizes": [ 10, 20, 30 ],
+    "sale":"Sale"
   },
   {
     "id": 2,
-    "title": "Hoodie",
+    "title": "Clothing",
     "price": 499,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "16.png",
@@ -19,25 +20,27 @@
   },
   {
     "id": 3,
-    "title": "Hoodie",
+    "title": "Clothing",
     "price": 499,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "product3.png",
     "variants": [ "black", "white", "yellow" ],
-    "sizes": [ 10, 20, 30 ]
+    "sizes": [ 10, 20, 30 ],
+    "sale": "Sale"
   },
   {
     "id": 4,
-    "title": "Hoodie",
+    "title": "Clothing",
     "price": 499,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "product4.png",
     "variants": [ "black", "white", "yellow" ],
-    "sizes": [ 10, 20, 30 ]
+    "sizes": [ 10, 20, 30 ],
+    "sale": "Sale"
   },
   {
     "id": 5,
-    "title": "Hoodie",
+    "title": "Clothing",
     "price": 499,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "product5.png",
@@ -46,7 +49,7 @@
   },
   {
     "id": 6,
-    "title": "Hoodie",
+    "title": "Clothing",
     "price": 499,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "product6.png",
@@ -55,7 +58,7 @@
   },
   {
     "id": 7,
-    "title": "Hoodie",
+    "title": "Clothing",
     "price": 499,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "7.png",
@@ -64,7 +67,7 @@
   },
   {
     "id": 8,
-    "title": "Hoodie",
+    "title": "Clothing",
     "price": 499,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "product2.png",
@@ -73,7 +76,7 @@
   },
   {
     "id": 9,
-    "title": "Hoodie",
+    "title": "Clothing",
     "price": 499,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "9.png",
@@ -82,7 +85,7 @@
   },
   {
     "id": 10,
-    "title": "Hoodie",
+    "title": "Clothing",
     "price": 499,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "10.png",
@@ -91,7 +94,7 @@
   },
   {
     "id": 11,
-    "title": "Hoodie",
+    "title": "Clothing",
     "price": 499,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "11.png",
@@ -100,7 +103,7 @@
   },
   {
     "id": 12,
-    "title": "Hoodie",
+    "title": "Clothing",
     "price": 499,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "12.png",
@@ -109,7 +112,7 @@
   },
   {
     "id": 13,
-    "title": "Hoodie",
+    "title": "Clothing",
     "price": 499,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "13.png",
@@ -118,7 +121,7 @@
   },
   {
     "id": 14,
-    "title": "Hoodie",
+    "title": "Clothing",
     "price": 499,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "14.png",
@@ -127,7 +130,7 @@
   },
   {
     "id": 15,
-    "title": "Hoodie",
+    "title": "Clothing",
     "price": 499,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "15.png",
@@ -136,7 +139,7 @@
   },
   {
     "id": 16,
-    "title": "Hoodie",
+    "title": "Clothing",
     "price": 499,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "product2.png",

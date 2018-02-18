@@ -1,8 +1,5 @@
 @import "variables";
 
-header{
-}
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -14,9 +11,15 @@ header{
   top: 0px;
   z-index: 10000;
   background-color: $darkGrey;
+  font-weight: lighter;
 
   &__logo {
     align-content: flex-start;
+    /* For cool corner round backgrounds instead of transparent
+    background-color: $darkGrey;
+    border-radius: 0px 100px 100px 0px;
+      */
+    padding-top: 10px;
   }
 
   &--trans {
@@ -32,37 +35,84 @@ header{
 
 
 
-.icon{
-    display: flex;
-    justify-content:space-between;
-    width: auto;
-    color: white;
-    align-items:baseline;
-    flex-wrap: nowrap
+.icon {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  color: white;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  padding: 10px 40px 10px 15px;
+  /* For cool round backgrounds instead of transparent
+  background-color: $darkGrey;
+  border-radius: 100px 0px 0px 100px;
+    */
+  &__bars{
+    font-size: 20px;
+    margin-left: 40px;
+    cursor: pointer;
+  }
+  
+
+  & a {
+    margin: 8px;
+  }
+
 }
+
+.menu{
+  font-size: 18px;
+  color: white;
+  background-color: $darkGrey;
+  position:fixed;
+  right: -14px;
+  top: 27px;
+  transition: ease-in;
+  padding: 20px;
+  cursor: pointer;
+  border: $primary-color solid 2px;
+  border-radius: 20px;
+ 
+}
+a:hover {
+  transform: scale(1.1, 1.1);
+  color: $primary-color;
+}
+
+
 
 /*Big Phones*/
-@media screen and (min-width: 568px) {
-
-}
-
-/* Tablet */
-@media screen and (min-width: 768px) {
-  .nav {
-    background-color: transparent;
-    position: fixed;
+  @media screen and (min-width: 568px) {
   }
-}
-/*Smalle PC*/
-@media screen and (min-width: 1000px) {
-  
-}
+  /* Tablet */
+  @media screen and (min-width: 768px) {
+    .nav {
+      background-color: transparent;
+      position: fixed;
+      will-change: transform;
+      transition: transform 200ms linear;
+    }
 
-/* Pc */
-@media screen and (min-width: 1200px) {
-  
-}
+    .headroom {
+      will-change: transform;
+      transition: transform 200ms linear;
+    }
 
-/* HD */
-@media screen and (min-width: 1920px) {
-}
+    .headroom--pinned {
+      transform: translateY(0%);
+    }
+
+    .headroom--unpinned {
+      background-color: $darkGrey;
+    }
+  }
+  /*Smalle PC*/
+  @media screen and (min-width: 1000px) {
+  }
+  /* Pc */
+  @media screen and (min-width: 1200px) {
+  }
+  /* HD */
+  @media screen and (min-width: 1920px) {
+  }

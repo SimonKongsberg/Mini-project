@@ -8,20 +8,6 @@ import Product from '@/components/Product'
 import Frontpage from '@/components/Frontpage'
 import Collection from '@/components/Collection'
 
-import VueAwesomeSwiper from 'vue-awesome-swiper'
-
-import { Tabs, Tab } from 'vue-tabs-component';
-
-
-
-// require styles
-import 'swiper/dist/css/swiper.css'
-
-Vue.component('tabs', Tabs);
-Vue.component('tab', Tab);
-
-Vue.use(VueAwesomeSwiper, /* { default global options } */)
-
 Vue.use(Router);
 
 export default new Router({
@@ -32,7 +18,7 @@ export default new Router({
       component: Frontpage
     },
     {
-      path: '/contactus',
+      path: '/contact',
       name: 'ContactUs',
       component: ContactUs
     },

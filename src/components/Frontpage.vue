@@ -12,19 +12,19 @@
         <!-- swiper -->
         <swiper :options="swiperOption">
           <swiper-slide><div class="banner" :style="{'background-image': 'url(' + require('../assets/big_summer.gif') + ')'}"></div></swiper-slide>
-          <swiper-slide>Slide 2</swiper-slide>
-          <swiper-slide>Slide 3</swiper-slide>
-          <div class="swiper-pagination cWhite" slot="pagination"></div>
-          <div class="swiper-button-prev cWhite" slot="button-prev"></div>
-          <div class="swiper-button-next cWhite" slot="button-next"></div>
+          <swiper-slide><div class="banner" :style="{'background-image': 'url(' + require('../assets/new_collection.gif') + ')'}"></div></swiper-slide>
+          <swiper-slide><div class="banner" :style="{'background-image': 'url(' + require('../assets/Lookbooks.gif') + ')'}"></div></swiper-slide>
+          <div class="swiper-pagination" slot="pagination"></div>
+          <div class="swiper-button-prev" slot="button-prev"></div>
+          <div class="swiper-button-next" slot="button-next"></div>
         </swiper>
       </md-card-media>
     </md-card>
 
     <div class="news">
-      <div class="news-item news-item--men" :style="{'background-image': 'url(' + require('../assets/men_lookbook.png') + ')'}">
-        <div class="news-item__text">MEN'S <br /><p>lookbook</p></div>
-      </div>
+        <div class="news-item news-item--men" :style="{'background-image': 'url(' + require('../assets/men_lookbook.png') + ')'}">
+          <a href="/"><div class="news-item__text">MEN'S <br /><p>lookbook</p></div></a>
+        </div>
       <div class="news-letter">
         <div class="news-letter__icon"><span class="fa fa-envelope"></span></div>
         <h1 class="news-letter__title">GET OUR NEWSLETTER</h1>
@@ -36,53 +36,100 @@
 
       </div>
       <div class="news-item news-item--women" :style="{'background-image': 'url(' + require('../assets/women_lookbook.png') + ')'}">
-        <div class="news-item__text">WOMEN'S <br /><p>lookbook</p></div>
-      </div>
+        <a href="/"><div class="news-item__text">WOMEN'S <br /><p>lookbook</p></div></a>
+</div>
     </div>
+
+    <!--Brand-->
 
     <div class="brand">
         <h3 class="brand__title">----- TOP BRANDS -----</h3><br />
       <div class="brand__icons">
-        <img src="../assets/logos.jpg" alt="logo" class="brand-icon"/>
+        <img src="../assets/logo1.png" alt="logo" class="brand-icon"/>
+        <img src="../assets/logo2.png" alt="logo2" class="brand-icon" />
+        <img src="../assets/logo3.png" alt="logo3" class="brand-icon" />
+        <img src="../assets/logo4.png" alt="logo4" class="brand-icon" />
+        <img src="../assets/logo5.png" alt="logo5" class="brand-icon" />
+
 
       </div>
     </div>
+    <!--Content-->
 
     <div class="content">
-      <div class="content__box"></div>
-      <div class="content__box"></div>
-      <div class="content__box"></div>
-    </div>
+      <div class="content__box content__box--left">
+        <a href="/"><img src="../assets/for_her.jpg" alt="for her" /></a>
+      </div>
+      <div class="content__box content__box--right">
+        <div class="content__box">
+          <a href="/"><img src="../assets/75_off.jpg" alt="75 off" /></a>
+        </div>
+        <div class="content__box content__box--bottom">
+          <a href="/"><img src="../assets/new_style.jpg" alt="new style" /></a>
+</div>
+      </div>
 
+    </div>
+    <!--Showcase-->
     <div>
       <tabs class="showcase-nav">
         <tab name="NEW ARRIVALS" class="showcase-nav__button">
-        <ul class="showcase">
-          <li class="showcase-item" v-for="product in products.slice(0,5)" :key="product.id">
-            <router-link :to="/product/ + product.id">
-              <img class="showcase-item__img" :src="'/static/products/' + product.img" :alt="product.title" />
-              <h4 class="showcase-item__title">{{ product.title }}</h4>
-              <div class="showcase-item__bottom">
-                <p>$ {{product.price}}</p>
-                <button><span class="fa fa-shopping-bag"></span>Add to bag</button>
-              </div>
-            </router-link>
-          </li>
-        </ul>
+          <ul class="showcase">
+            <li class="showcase-item" v-for="product in products.slice(0,5)" :key="product.id">
+              <router-link :to="/product/ + product.id">
+                <p class="sale-float">{{ product.sale}}</p>
+                <img class="showcase-item__img" :src="'/static/products/' + product.img" :alt="product.title" />
+                <h4 class="showcase-item__title">{{ product.title }}</h4>
+                <div class="showcase-item__bottom">
+                  <p class="showcase-item__price">$ {{product.price}}</p>
+                  <button class="showcase-item__button"><span class="fa fa-shopping-bag"></span> Add to bag</button>
+                </div>
+              </router-link>
+            </li>
+          </ul>
         </tab>
-        <tab name="TOP SELLERS" class="showcase-nav__button"></tab>
-        <tab name="FEATURED" class="showcase-nav__button"></tab>
+        <tab name="TOP SELLERS" class="showcase-nav__button">
+          <ul class="showcase">
+            <li class="showcase-item" v-for="product in products.slice(6,11)" :key="product.id">
+              <router-link :to="/product/ + product.id">
+                <img class="showcase-item__img" :src="'/static/products/' + product.img" :alt="product.title" />
+                <h4 class="showcase-item__title">{{ product.title }}</h4>
+                <div class="showcase-item__bottom">
+                  <p class="showcase-item__price">$ {{product.price}}</p>
+                  <button class="showcase-item__button"><span class="fa fa-shopping-bag"></span> Add to bag</button>
+                </div>
+              </router-link>
+            </li>
+          </ul>
+        </tab>
+        <tab name="FEATURED" class="showcase-nav__button">
+          <ul class="showcase">
+            <li class="showcase-item" v-for="product in products.slice(11,16)" :key="product.id">
+              <router-link :to="/product/ + product.id">
+                <img class="showcase-item__img" :src="'/static/products/' + product.img" :alt="product.title" />
+                <h4 class="showcase-item__title">{{ product.title }}</h4>
+                <div class="showcase-item__bottom">
+                  <p class="showcase-item__price">$ {{product.price}}</p>
+                  <button class="showcase-item__button"><span class="fa fa-shopping-bag"></span> Add to bag</button>
+                </div>
+              </router-link>
+            </li>
+          </ul>
+        </tab>
       </tabs>
     </div>
 
-
+    <!--Banner 2-->
     <img src="../assets/all_summer.jpg" class="banner2" alt="banner2"/>
+
+    <!--About-->
     <div class="about">
       <img src="../assets/jane.jpg" class="about__img"/>
       <div class="about__name"><h3>Jane Smith</h3></div>
       <div class="about__text"><p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p></div>
     </div>
 
+    <!--Social-->
     <div class="social">
       <div class="social__title">----- GET US ON -----</div>
       <div class="social__nav">

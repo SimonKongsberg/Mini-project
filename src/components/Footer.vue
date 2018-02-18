@@ -27,8 +27,8 @@
       <img class="credit" />
     </div>
     <div class="footer__section footer__section--logo">
-      <img class="footer-logo" src="../assets/logo.png" />
-      <p class="footer__text"></p>
+      <a href="/"><img class="footer-logo" src="../assets/logo.png" /></a>
+      <p style="text-align:center;"class="footer__text">Frontend Project</p>
     </div>
 
   </footer>

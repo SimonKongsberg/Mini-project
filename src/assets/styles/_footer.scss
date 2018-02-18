@@ -2,17 +2,18 @@
 
 .footer {
   background-color: $darkGrey;
-  display: grid;
-  grid-template-columns: 20%;
-
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  flex-wrap: wrap;
   &__section {
-
+    width: 110px;
     &--credit{
 
     }
 
     &--logo{
-
+      width: 150px;
     }
   }
 

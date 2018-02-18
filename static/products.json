@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "title": "Clothing",
-    "price": 499,
+    "title": "Shirt",
+    "price": 219.50,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "product1.png",
     "variants": [ "black", "white", "yellow" ],
@@ -11,8 +11,8 @@
   },
   {
     "id": 2,
-    "title": "Clothing",
-    "price": 499,
+    "title": "Full suit",
+    "price": 99.99,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "16.png",
     "variants": [ "black", "white", "yellow" ],
@@ -20,8 +20,8 @@
   },
   {
     "id": 3,
-    "title": "Clothing",
-    "price": 499,
+    "title": "Shirt",
+    "price": 599,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "product3.png",
     "variants": [ "black", "white", "yellow" ],
@@ -30,7 +30,7 @@
   },
   {
     "id": 4,
-    "title": "Clothing",
+    "title": "Denim shirt",
     "price": 499,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "product4.png",
@@ -40,8 +40,8 @@
   },
   {
     "id": 5,
-    "title": "Clothing",
-    "price": 499,
+    "title": "Dress",
+    "price": 199,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "product5.png",
     "variants": [ "black", "white", "yellow" ],
@@ -49,8 +49,8 @@
   },
   {
     "id": 6,
-    "title": "Clothing",
-    "price": 499,
+    "title": "Short dress",
+    "price": 799,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "product6.png",
     "variants": [ "black", "white", "yellow" ],
@@ -58,8 +58,8 @@
   },
   {
     "id": 7,
-    "title": "Clothing",
-    "price": 499,
+    "title": "Dotted shirt",
+    "price": 99,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "7.png",
     "variants": [ "black", "white", "yellow" ],
@@ -67,17 +67,17 @@
   },
   {
     "id": 8,
-    "title": "Clothing",
+    "title": "Dress",
     "price": 499,
     "description": "Lorem ipsum asdkal sdfijk",
-    "img": "product2.png",
+    "img": "product8.png",
     "variants": [ "black", "white", "yellow" ],
     "sizes": [ 10, 20, 30 ]
   },
   {
     "id": 9,
-    "title": "Clothing",
-    "price": 499,
+    "title": "Denim dress",
+    "price": 199,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "9.png",
     "variants": [ "black", "white", "yellow" ],
@@ -85,8 +85,8 @@
   },
   {
     "id": 10,
-    "title": "Clothing",
-    "price": 499,
+    "title": "Dress",
+    "price": 450,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "10.png",
     "variants": [ "black", "white", "yellow" ],
@@ -94,8 +94,8 @@
   },
   {
     "id": 11,
-    "title": "Clothing",
-    "price": 499,
+    "title": "Dress",
+    "price": 499.50,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "11.png",
     "variants": [ "black", "white", "yellow" ],
@@ -103,8 +103,8 @@
   },
   {
     "id": 12,
-    "title": "Clothing",
-    "price": 499,
+    "title": "Top and dress",
+    "price": 999.50,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "12.png",
     "variants": [ "black", "white", "yellow" ],
@@ -112,8 +112,8 @@
   },
   {
     "id": 13,
-    "title": "Clothing",
-    "price": 499,
+    "title": "Dress",
+    "price": 199,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "13.png",
     "variants": [ "black", "white", "yellow" ],
@@ -121,8 +121,8 @@
   },
   {
     "id": 14,
-    "title": "Clothing",
-    "price": 499,
+    "title": "Dress",
+    "price": 50,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "14.png",
     "variants": [ "black", "white", "yellow" ],
@@ -130,8 +130,8 @@
   },
   {
     "id": 15,
-    "title": "Clothing",
-    "price": 499,
+    "title": "Dress",
+    "price": 549,
     "description": "Lorem ipsum asdkal sdfijk",
     "img": "15.png",
     "variants": [ "black", "white", "yellow" ],
@@ -139,10 +139,10 @@
   },
   {
     "id": 16,
-    "title": "Clothing",
-    "price": 499,
+    "title": "Dress",
+    "price": 199,
     "description": "Lorem ipsum asdkal sdfijk",
-    "img": "product2.png",
+    "img": "16.png",
     "variants": [ "black", "white", "yellow" ],
     "sizes": [ 10, 20, 30 ]
   }

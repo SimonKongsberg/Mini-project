@@ -1,30 +1,30 @@
 <template>
   <footer class="footer">
     <div class="footer__section">
-      <h4 class="footer__title">Questions?</h4>
-      <p class="footer__text">Help</p>
-      <p class="footer__text">Track order</p>
-      <p class="footer__text">Returns</p>
+      <a href="/"><h4 class="footer__title">Questions?</h4></a>
+      <a href="/"> <p class="footer__text">Help</p></a>
+      <a href="/"><p class="footer__text">Track order</p></a>
+      <a href="/"><p class="footer__text">Returns</p></a>
 
     </div>
     <div class="footer__section">
-      <h4 class="footer__title">Where to buy</h4>
-      <p class="footer__text">Store locator</p>
-      <p class="footer__text">Wishlist</p>
-      <p class="footer__text">Giftcards</p>
+      <a href="/"><h4 class="footer__title">Where to buy</h4></a>
+      <a href="/"><p class="footer__text">Store locator</p></a>
+      <a href="/"><p class="footer__text">Wishlist</p></a>
+      <a href="/"><p class="footer__text">Giftcards</p></a>
 
 
     </div>
     <div class="footer__section">
-      <h4 class="footer__title">About us</h4>
-      <p class="footer__text">Our story</p>
-      <p class="footer__text">Careers</p>
-      <p class="footer__text">Affiliates</p>
+      <a href="/"><h4 class="footer__title">About us</h4></a>
+      <a href="/"><p class="footer__text">Our story</p></a>
+      <a href="/"><p class="footer__text">Careers</p></a>
+      <a href="/"><p class="footer__text">Affiliates</p></a>
 
 
-    </div>
+</div>
     <div class="footer__section footer__section--credit">
-      <img class="credit" />
+      <img src="../assets/creditcards.png" class="credit" />
     </div>
     <div class="footer__section footer__section--logo">
       <a href="/"><img class="footer-logo" src="../assets/logo.png" /></a>

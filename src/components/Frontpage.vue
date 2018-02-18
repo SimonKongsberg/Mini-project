@@ -25,15 +25,16 @@
         <div class="news-item news-item--men" :style="{'background-image': 'url(' + require('../assets/men_lookbook.png') + ')'}">
           <a href="/"><div class="news-item__text">MEN'S <br /><p>lookbook</p></div></a>
         </div>
-      <div class="news-letter">
-        <div class="news-letter__icon"><span class="fa fa-envelope"></span></div>
-        <h1 class="news-letter__title">GET OUR NEWSLETTER</h1>
-        <p class="news-letter__text">JOIN OUR MAILLIST TO RECIVE <br />SPECIAL DISCOUNTS</p>
-        <form class="news-form">
-          <input class="news-form__email" placeholder="ENTER YOUR EMAIL" /><br />
-          <button class="news-form__button">SUBSCRIBE</button>
-        </form>
-
+      <div class="gradiant">
+        <div class="news-letter">
+          <div class="news-letter__icon"><span class="fa fa-envelope"></span></div>
+          <h1 class="news-letter__title">GET OUR NEWSLETTER</h1>
+          <p class="news-letter__text">JOIN OUR MAILLIST TO RECIVE <br />SPECIAL DISCOUNTS</p>
+          <form class="news-form">
+            <input class="news-form__email" placeholder="ENTER YOUR EMAIL" /><br />
+            <button class="news-form__button">SUBSCRIBE</button>
+          </form>
+        </div>
       </div>
       <div class="news-item news-item--women" :style="{'background-image': 'url(' + require('../assets/women_lookbook.png') + ')'}">
         <a href="/"><div class="news-item__text">WOMEN'S <br /><p>lookbook</p></div></a>

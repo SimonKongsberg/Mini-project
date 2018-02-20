@@ -9,12 +9,11 @@
 .banner {
   width: 100%;
   height: 350px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   display: none;
   margin-top: 110px;
   text-align: center;
-
 
   &__button1 {
     position: relative;
@@ -407,7 +406,7 @@
     .banner {
       display: table;
       position: static;
-      height: 430px;
+      height: 400px;
       margin-top: 0px;
     }
 
@@ -427,7 +426,6 @@
  @media screen and (min-width: 1000px) {
   .banner {
     height: 530px;
-
     &__button1 {
       margin-left: 50%;
       margin-right: 0px;
@@ -442,54 +440,66 @@
       margin-left: 0px;
       margin-right: 0px;
       font-size: 20px;
-      }
     }
   }
-        
+  .news {
+    justify-content: space-between;
+    margin: 20px 50px 0px 50px;
 
-        .news {
-          justify-content: space-between;
-          margin: 20px 50px 0px 50px;
-
-          &-item {
-            background-color: black;
-            width: 30%;
-            height: 320px;
-            align-content: center;
-          }
-        }
+    &-item {
+      background-color: black;
+      width: 30%;
+      height: 320px;
+      align-content: center;
+    }
+  }
 
   .news-item {
     margin-left: 0px;
     margin-right: 0px;
     max-width: none;
   }
-        /*About*/
-        .about {
-          padding: 60px 200px;
+  /*About*/
+  .about {
+    padding: 60px 200px;
 
-          &__img {
-          }
+    &__img {
+    }
 
-          &__name {
-          }
+    &__name {
+    }
 
-          &__text {
-            
-          }
-        }
-      
-      /* Pc */
-      @media screen and (min-width: 1200px) {
-        .banner {
-          height: 550px;
-          background-size: cover;
-        }
+    &__text {
+    }
+  }
 
-        .news {
-          margin: 80px 100px 0px 100px;
-        }
-      }
+  }
+        
+/* Pc */
+@media screen and (min-width: 1200px) {
+  .banner {
+    height: 550px;
+
+    &__button1 {
+
+    }
+
+    &__button2 {
+      margin-top: 370px;
+
+    }
+  }
+
+  .news {
+    margin: 80px 100px 0px 100px;
+  }
+
+}
       /* HD */
-      @media screen and (min-width: 1920px) {
+      @media screen and (min-width: 1720px) {
+
+        .banner {
+          height: 750px;
+        }
+
       }

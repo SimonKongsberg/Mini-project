@@ -2,6 +2,9 @@
   <div>
     <div class="header--back"></div>
     <form class="contact" @submit.prevent="validateBeforeSubmit">
+      <h1> Contact form</h1>
+      <p>You can contact us with the form below!</p>
+      <br />
       <div class="column is-12">
         <label class="label">Email</label>
         <p class="control has-icon has-icon-right">

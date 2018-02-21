@@ -408,6 +408,10 @@
       position: static;
       height: 400px;
       margin-top: 0px;
+
+      &__button1{
+        margin-top: 300px;
+      }
     }
 
     .news-item {
@@ -481,7 +485,7 @@
     height: 550px;
 
     &__button1 {
-
+      margin-top: 375px;
     }
 
     &__button2 {
@@ -494,12 +498,20 @@
     margin: 80px 100px 0px 100px;
   }
 
+
+
 }
       /* HD */
-      @media screen and (min-width: 1720px) {
+      @media screen and (min-width: 1600px) {
 
         .banner {
           height: 750px;
+
+          &__button1{
+            margin-top: 480px;
+          }
         }
+
+
 
       }

@@ -6,10 +6,11 @@
   background-color: $darkGrey;
   height: 120px;
   width: 100%;
+  display: none;
 }
 
 .contact {
-  margin: 50px 20% 50px 20%;
+  
   font-family: 'open sans', sans-serif;
   background-color: $fade;
   padding: 50px;
@@ -20,7 +21,7 @@
   }
 
   & input {
-    width: 250px;
+    width: 100%;
   }
 
   & button {
@@ -42,3 +43,21 @@
 #message{
   height: 50px;
 }
+/*tablet*/
+@media screen and (min-width: 560px) {
+  .contact {
+    margin: 50px auto 50px auto;
+    max-width: 800px;
+
+    & input {
+      width: 255px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header--back {
+    display: block;
+  }
+}
+

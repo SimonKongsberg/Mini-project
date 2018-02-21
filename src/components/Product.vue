@@ -8,13 +8,11 @@
     <div class="product-main">
       <div class="product-main__left">
         <div class="product-main__showcase">
-          
           <img src="/static/products/10.png"/>
           <img src="/static/products/11.png" />
           <img src="/static/products/12.png" />
           <img src="/static/products/13.png" />
           <img src="/static/products/14.png" />
-
         </div>
 
         <img class="product-main__img" :src="'/static/products/' + product.img" :alt="product.title"/>

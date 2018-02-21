@@ -1,6 +1,6 @@
 <template>
   <header :class="{'headroom--unpinned': scrolled}"  v-on="handleScroll" class="nav">
-    <a href="/"><div class="nav__logo"><img src="../assets/logo.png" /></div></a>
+    <a href="#/"><div class="nav__logo"><img src="../assets/logo.png" /></div></a>
     <div class="icon">
       <a href="#/"><div class="icon__login"><span class="fa fa-user"></span> Login</div></a>
       <a href="#/"><div class="icon__cart"><span class="fa fa-shopping-cart"></span> 3 items</div></a>

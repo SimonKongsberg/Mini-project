@@ -11,8 +11,8 @@
       <md-card-media>
         <!-- swiper -->
         <swiper :options="swiperOption">
-          <swiper-slide><div class="banner" :style="{'background-image': 'url(' + require('../assets/big_summer.gif') + ')'}"><div class="middle"><button href="#/collection" class="banner__button1">Learn more about our great deals</button></div></div></swiper-slide>
-          <swiper-slide><div class="banner" :style="{'background-image': 'url(' + require('../assets/new_collection.gif') + ')'}"><div class="middle"><button class="banner__button2">Browse collection</button></div></div></swiper-slide>
+          <swiper-slide><div class="banner" :style="{'background-image': 'url(' + require('../assets/big_summer.gif') + ')'}"><div class="middle"><button onclick="window.location.href='#/product/2'" class="banner__button1">Learn more about our great deals</button></div></div></swiper-slide>
+          <swiper-slide><div class="banner" :style="{'background-image': 'url(' + require('../assets/new_collection.gif') + ')'}"><div class="middle"><button onclick="window.location.href='#/collection'" class="banner__button2">Browse collection</button></div></div></swiper-slide>
   <swiper-slide><a href="#/collection"><div class="banner" :style="{'background-image': 'url(' + require('../assets/Lookbooks.gif') + ')'}"></div></a></swiper-slide>
   <div class="swiper-pagination" slot="pagination"></div>
   <div class="swiper-button-prev" slot="button-prev"></div>
@@ -128,6 +128,7 @@
     <div class="about__img">
       <img src="../assets/jane_tran.png" />
     </div>
+    <br />
     <div class="about__name"><h3>Jane Smith</h3></div>
     <div class="about__text"><p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p></div>
   </div>

@@ -4,6 +4,7 @@
     <form class="contact" @submit.prevent="validateBeforeSubmit">
       <h1> Contact form</h1>
       <p>You can contact us with the form below!</p>
+      <hr />
       <br />
       <div class="column is-12">
         <label class="label">Email</label>

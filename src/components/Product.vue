@@ -17,7 +17,6 @@
 
         </div>
 
-        <p class="sale-float sale-float--product">{{ product.sale}}</p>
         <img class="product-main__img" :src="'/static/products/' + product.img" :alt="product.title"/>
       </div>
       <div class="product-main__right">

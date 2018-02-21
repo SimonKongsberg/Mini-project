@@ -1,6 +1,10 @@
 # my-vue-project
 
-> A Vue.js project
+> Frontend Mini Project
+
+Link to live demo site:
+http://simo608e.my.eal.dk 
+
 
 ## Build Setup
 

@@ -1,6 +1,6 @@
-# my-vue-project
+# Frontend Mini Project
 
-> Frontend Mini Project
+> 2 Semester Web Development - Frontend Development Exam
 
 Link to live demo site:
 http://simo608e.my.eal.dk 
